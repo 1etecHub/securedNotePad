@@ -18,7 +18,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="user")
+@Table(name="users",
+        uniqueConstraints = {
+            @UniqueConstraint(columnNames = "usernames"),
+            @UniqueConstraint(columnNames = "email")
+    })
 public class User {
 
 
