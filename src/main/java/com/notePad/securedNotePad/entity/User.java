@@ -5,9 +5,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -15,6 +13,8 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -48,13 +48,15 @@ public class User {
     //@JsonIgnore
     private String password;
 
+    private String userName;
+
     private LocalDate credentialsExpired;
 
     private LocalDate accountExpiryDate;
 
     private String twoFactorSecret;
 
-    private boolean isTwoFactorEnabled = false;
+    private boolean is2faEnabled = false;
 
     private String signUpMethod;
 
