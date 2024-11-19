@@ -95,12 +95,12 @@ public class AppUserDetails implements UserDetails {
         return true;
     }
 
-    @Override
+    /*@Override
     public boolean isEnabled() {
         return isEnabled;
     }
 
     public String getFullName() {
         return fullName;
-    }
+    }*/
 }

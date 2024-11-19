@@ -20,9 +20,12 @@ public class SecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 //.formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
-                .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS));;
+                .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
         return http.build();
 
     }
+
+
+
 
 }
