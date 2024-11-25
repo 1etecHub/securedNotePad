@@ -1,26 +1,26 @@
 package com.notePad.securedNotePad.controller.kafka;
 
 
+import com.notePad.securedNotePad.entity.User;
+import com.notePad.securedNotePad.kafka.JsonKafkaProducer;
 import com.notePad.securedNotePad.kafka.KafkaProducer;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/kafka/")
+@RequiredArgsConstructor
 public class KafkaProducerController {
 
 
 
     //private final KafkaProducerService kafkaProducerService;
     private final KafkaProducer kafkaProducerService;
+    private final JsonKafkaProducer jsonKafkaProducerService;
 
 
 
-    public KafkaProducerController(KafkaProducer kafkaProducerService) {
-        this.kafkaProducerService = kafkaProducerService;
-    }
 
     @GetMapping("/sendMessage")
     public String sendMessage(@RequestParam("message") String message) {
@@ -30,6 +30,14 @@ public class KafkaProducerController {
         } catch (Exception e) {
             return "Failed to send message. Check logs for details.";
         }
+    }
+
+    @PostMapping("/sendJsonMessage")
+    public ResponseEntity<String> sendJsonMessage(@RequestBody User user) {
+
+            jsonKafkaProducerService.sendMessage(user);
+            return ResponseEntity.ok("Message sent successfully!");
+
     }
 }
 
