@@ -1,1 +1,14 @@
 /Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/SecuredNotePadApplication.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/controller/NoteController.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/entity/AppRole.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/entity/Note.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/entity/Role.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/entity/User.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/repository/NoteRepository.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/repository/RoleRepository.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/repository/UserRepository.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/security/SecurityConfig.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/security/securityServices/AppUserDetails.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/security/securityServices/AppUserDetailsService.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/serviceImplementation/NoteServiceImpl.java
+/Users/decagon/Desktop/securedNotePad/src/main/java/com/notePad/securedNotePad/services/NoteService.java

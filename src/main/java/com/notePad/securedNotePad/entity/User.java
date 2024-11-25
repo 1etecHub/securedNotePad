@@ -8,11 +8,8 @@ import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-
-@Data
 @Getter
 @Setter
 @NoArgsConstructor
@@ -47,8 +44,6 @@ public class User {
     @Column(name = "password")
     //@JsonIgnore
     private String password;
-
-    private String userName;
 
     private LocalDate credentialsExpired;
 

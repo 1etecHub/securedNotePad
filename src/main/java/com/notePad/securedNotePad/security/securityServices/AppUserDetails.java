@@ -53,15 +53,13 @@ public class AppUserDetails implements UserDetails {
         // Create and return an instance of AppUserDetails
         return new AppUserDetails(
                 user.getId(),
-                user.getUserName(),
+                user.getUsername(),
                 user.getEmail(),
                 user.getPassword(),
                 user.is2faEnabled(),
                 List.of(authority)
         );
     }
-
-
 
 
 

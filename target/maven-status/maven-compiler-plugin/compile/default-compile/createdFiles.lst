@@ -1,1 +1,6 @@
+com/notePad/securedNotePad/services/NoteService.class
+com/notePad/securedNotePad/entity/Role.class
+com/notePad/securedNotePad/controller/NoteController.class
+com/notePad/securedNotePad/entity/Note.class
 com/notePad/securedNotePad/SecuredNotePadApplication.class
+com/notePad/securedNotePad/entity/AppRole.class
